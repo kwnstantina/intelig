@@ -1,0 +1,130 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+.cardNews-title{
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 1px solid #FFD000;
+  border-right: 1px solid #FFD000;
+  border-bottom-right-radius: 20px ;
+  padding-bottom: 8px;
+  width: 40%;
+  margin: 200px 0 20px 0;
+}
+.platform {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 5rem 0rem 0rem 0rem;
+  max-width: 1000px;
+  box-shadow: rgb(50 50 93 / 1%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+}
+
+.platform-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style-type: none;
+  outline: 1px solid #ddd;
+  text-align: center;
+  font-weight: 300;
+  margin: {
+    top: 1px;
+    left: 1px;
+  }
+  &:first-child {
+    outline: 1px solid #fff;
+    background: transparent;
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+  }
+  &:nth-child(3) {
+    outline: 1px solid #30305b;
+  }
+  &:nth-child(-n+3) {
+    padding: {
+      top: 40px;
+      bottom: 40px;
+    }
+  }
+   .platform-title {
+    //font-size: 26px;
+    margin: {
+      top: 0;
+      bottom: 3rem;
+    }
+  }
+  &.cell-feature {
+    text-align: left;
+    font-size: 18px;
+  }
+  &.plattform {
+    color: #f4d03f;
+    .platform-btn{
+      color: #f4d03f;
+      &:hover {
+        background-color: #f4d03f;
+        border-color: #f4d03f;
+        color: white;
+      }
+    }
+  }
+  &.enterprise {
+    background-color: #4f3e4a;
+    color: #f4d03f;
+    .platform-btn {
+      color:#f4d03f;
+      &:hover {
+        background-color:  #4f3e4a;
+        border-color:  #4f3e4a;
+        color: #f4d03f;
+      }
+    }
+  }
+}
+
+/* Table columns
+================================== */
+.platform-cell  {
+  width: calc(33.33% - 1px);
+  &.cell-feature {
+    @media only screen and (max-width : 768px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.platform-btn {
+  border: 2px solid;
+  padding: .6rem .9rem .6rem .9rem;
+  font-weight: 400;
+  text: {
+    transform: uppercase;
+    decoration: none;
+  }
+  @include transition(0.2s ease-in-out);
+  @include border-radius(.3rem);
+}
+
+
+@media (max-width: 580px) {
+  .platform{
+    max-width: 300px;
+  }
+}

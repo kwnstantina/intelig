@@ -1,0 +1,149 @@
+.path-heading {
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 1px solid #FFD000;
+  border-right: 1px solid #FFD000;
+  border-bottom-right-radius: 20px ;
+  padding-bottom: 8px;
+  width: 40%;
+  margin: 100px 0 100px 0;
+}
+
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  border: solid 1px #555;
+ //background-color: #eed;
+  box-shadow: 0px 10px  5px rgba(0,0,0,0.4);
+}
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 95%;
+  border-radius: 4px;
+  border: 1px solid black;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: inherit;
+}
+
+label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 20px;
+  color: black;
+  font-weight: 200;
+  font-size: inherit;
+  margin-left: 10px;
+}
+.submit{
+  background: #FFD000;
+  color: black;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 20px;
+  font-weight: 100;
+  letter-spacing: 10px;
+  font-size: inherit;
+
+}
+
+.submit:hover{
+  background: #dbd442;
+}
+.submit:active{
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+
+}
+
+//button[type="submit"],
+input[type="submit"] {
+  background: #FFD000;
+  color: black;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 20px;
+  font-weight: 100;
+  letter-spacing: 10px;
+  font-size: inherit;
+}
+
+input[type="submit"]:hover {
+  background: #dbd442;
+}
+
+
+input[type="button"]:active,
+input[type="submit"]:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+input:disabled {
+  opacity: 0.4;
+}
+
+input[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+
+hr {
+  margin-top: 30px;
+}
+
+select {
+  display:flex;
+  font-size: inherit;
+  flex-direction: row;
+  position:relative;
+  width:250px;
+  height:40px;
+  margin-left:10px;
+}
+
+option {
+  padding:0 30px 0 10px;
+  min-height:40px;
+  display:flex;
+  align-items:center;
+  background:white;
+  border-top:#222 solid 1px;
+  position:absolute;
+  top:0;
+  width: 100%;
+  pointer-events:none;
+  order:2;
+  z-index:1;
+  transition:background .4s ease-in-out;
+  box-sizing:border-box;
+  overflow:hidden;
+  white-space:nowrap;
+  text-align: center;
+}
+select:focus option {
+  position:relative;
+  pointer-events:all;
+}
+
+option:hover {
+  background:#666;
+}
+
+
