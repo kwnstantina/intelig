@@ -22,7 +22,6 @@ Project is created by using:
 To run this project, install it locally using npm:
 
 ```
-$ cd ../intelig
 $ npm install
 $ npm start
 ```
