@@ -8,7 +8,7 @@ A project for storing data  using React with TypeScript.
 
 
 ## General info
-A project for storing data either from urls by web or local computer.Supportive filtering and searching with advanced tables.
+A project for storing data either from urls by web or local computer.Supportive filtering and searching with advanced tables, with *Animations*.
 
 ## Technologies
 
