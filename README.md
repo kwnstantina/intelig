@@ -1,6 +1,6 @@
 
 
-# A project witch store data with react, using typeScript, useQuery,react-hook-form and animations
+# A project witch store data with react, using typeScript
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
