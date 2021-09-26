@@ -1,0 +1,55 @@
+.modal {
+  width:inherit;
+  background: white;
+  border: 1px solid #ccc;
+  transition: 1.1s ease-out;
+  box-shadow: -2rem 2rem 2rem rgba(black, 0.2);
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+  animation-name: example;
+  animation-duration: 2s;
+  margin:20px;
+  offset-path: path("M 331,124 S 11060,64 -616,-145");
+
+  h2 {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    margin: 0;
+  }
+  .modal__content {
+    padding: 1rem;
+  }
+  .modal__actions {
+    border-top: 1px solid #ccc;
+    background: #eee;
+    padding: 0.5rem 1rem;
+    .actions__buttons {
+      border: 0;
+      background: #ff8b88;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      line-height: 1;
+    }
+  }
+}
+@keyframes example {
+  0%   {
+    offset-rotate: 0deg;
+    offset-path: path("M 331,124 S 11060,64 -616,-145");
+  }
+  25%  {
+    offset-rotate: 2deg;
+    offset-path: path("M 250,100 S -300,500 -700,-200");
+  }
+  75%  {
+    offset-rotate: 0deg;
+    offset-path: path("M 331,124 S 11060,64 -616,-145");
+  }
+  100% {
+    offset-rotate: 0deg;
+    offset-path: path("M 331,124 S 11060,64 -616,-145");
+  }
+}

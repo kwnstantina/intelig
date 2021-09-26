@@ -26,7 +26,6 @@ const  App=() =>{
             <ParentComp childComp={<SearchComponent />}/>
             <ParentComp childComp={<CardNews/>}/>
             <ParentComp childComp={<TestimonialsHOC/>}/>
-            {/*<ParentComp childComp={<h3>Child component 2</h3>} />*/}
             {/*<ParentComp childComp={(*/}
             {/*    <div style={{border: '2px solid red'}}>*/}
             {/*      <h4>Child component</h4>*/}
