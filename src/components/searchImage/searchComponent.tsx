@@ -1,6 +1,5 @@
 import React, {useLayoutEffect, useRef, useState} from 'react';
 import "./searchComponent.scss";
-import table from '../../images/table.png';
 import robot from '../../images/star-wars-robot.png';
 import InlineStyles from "../../helper/inlineStyles/inlineStyles";
 import CONSTANTS from "../../helper/constants/constants";
@@ -37,15 +36,29 @@ const SearchComponent = () => {
     return (
         <>
             <h3 className="title">Filter & Searching </h3>
-            <div className="animateSearch">
-                <p className="animatePrh"
+            <div className="animate__search">
+                <img src={robot} className="animate__imageRobot" alt="robot"  ref={imageRef}  style={InlineStyles.setStyleToTableImage(displayed.itemTwo)}/>
+                <ul>
+                <li className="animate__paragraph"
                    style={InlineStyles.setParagraphStyleToTableImage(displayed.itemOne)}
                    ref={paragraphRef}
                 >
                     {CONSTANTS.infoOfParaghInTableImage}
-                </p>
-                <img src={robot} className="imageRobot" alt="robot"/>
-                <img src={table}  alt="reactTable" ref={imageRef} className="searchTable" style={InlineStyles.setStyleToTableImage(displayed.itemTwo)}/>
+                </li>
+                <li
+                    className="animate__paragraph"
+                    style={InlineStyles.setParagraphStyleToTableImage(displayed.itemOne)}
+                    ref={paragraphRef}
+                >
+                    {CONSTANTS.infoOfParaghInTableImageSub}
+                </li>
+                    <li
+                        className="animate__paragraph"
+                        style={InlineStyles.setParagraphStyleToTableImage(displayed.itemOne)}
+                        ref={paragraphRef}>
+                        <a href="database" className="animate__bouncy">Go to Database</a>
+                    </li>
+                </ul>
             </div>
         </>
     );

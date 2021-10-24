@@ -1,11 +1,20 @@
-.title {
-  color: #424242; }
+.path__heading {
+  text-align: center;
+  font-size: 40px;
+  border-bottom: 1px solid #FFD000;
+  border-right: 1px solid #FFD000;
+  border-bottom-right-radius: 20px;
+  padding-bottom: 8px;
+  width: 40%;
+  color: white;
+  margin: 62px 0 46px 0; }
 
 form {
-  max-width: 700px;
+  max-width: 50%;
   margin: 0 auto;
   border: solid 1px #555;
-  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.4);
+  background-color: #2e4247; }
 
 input {
   display: block;
@@ -24,12 +33,31 @@ label {
   display: block;
   margin-bottom: 13px;
   margin-top: 20px;
-  color: black;
+  color: white;
   font-weight: 200;
   font-size: inherit;
   margin-left: 10px; }
 
-button[type="submit"],
+.submit {
+  background: #FFD000;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 20px;
+  font-weight: 100;
+  letter-spacing: 10px;
+  font-size: inherit; }
+
+.submit:hover {
+  background: #dbd442; }
+
+.submit:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8; }
+
 input[type="submit"] {
   background: #FFD000;
   color: black;
@@ -41,11 +69,9 @@ input[type="submit"] {
   letter-spacing: 10px;
   font-size: inherit; }
 
-button[type="submit"]:hover,
 input[type="submit"]:hover {
   background: #dbd442; }
 
-button[type="submit"]:active,
 input[type="button"]:active,
 input[type="submit"]:active {
   transition: 0.3s all;
@@ -59,61 +85,34 @@ input:disabled {
 input[type="button"]:hover {
   transition: 0.3s all; }
 
-button[type="submit"],
 input[type="button"],
 input[type="submit"] {
   -webkit-appearance: none; }
 
-button[type="button"] {
-  display: block;
-  appearance: none;
-  background: #333;
-  color: black;
-  border: none;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  border-radius: 4px; }
-
 hr {
   margin-top: 30px; }
-
-button {
-  display: block;
-  appearance: none;
-  margin-top: 40px;
-  border: 1px solid #333;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  border-radius: 4px; }
 
 select {
   display: flex;
   font-size: inherit;
   flex-direction: row;
   position: relative;
-  width: 250px;
+  width: 200px;
   height: 40px;
   margin-left: 10px; }
 
 option {
-  padding: 0 30px 0 10px;
-  min-height: 40px;
+  padding: 0 20px 0 10px;
+  min-height: 30px;
   display: flex;
-  align-items: center;
-  background: white;
   border-top: #222 solid 1px;
   position: absolute;
-  top: 0;
-  width: 100%;
   pointer-events: none;
-  order: 2;
   z-index: 1;
   transition: background .4s ease-in-out;
   box-sizing: border-box;
   overflow: hidden;
-  white-space: nowrap;
-  text-align: center; }
+  white-space: nowrap; }
 
 select:focus option {
   position: relative;

@@ -1,5 +1,4 @@
-import React, {ReactDOM} from "react";
-import TableServices from "../../containers/tableServicesHOC/tableServices";
+import React from "react";
 import Loader from "../animations/loader";
 
 

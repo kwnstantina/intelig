@@ -20,7 +20,7 @@ const ScrollProgress=()=>{
     }, [scrollProgress]);
 
     const progressContainerStyle: CSSProperties = {
-        background: "#f8bbd0",
+        background: "#78b4c2",
         boxShadow: "0 2px 4px rgba(0, 0, 0, 0.3)",
         height: "10px",
         position: "fixed",
@@ -29,13 +29,13 @@ const ScrollProgress=()=>{
     };
     const progressBarStyle = {
         height: "10px",
-        background: "#e91e63",
+        background: "#557982",
         width: scrolled
     };
     return (
         <div className="col-12">
-            <div className="progress-container" style={progressContainerStyle}>
-                <div className="progress-bar" style={progressBarStyle}/>
+            <div className="progress__container" style={progressContainerStyle}>
+                <div className="progress__bar" style={progressBarStyle}/>
             </div>
         </div>
     );

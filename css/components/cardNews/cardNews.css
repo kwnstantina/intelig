@@ -1,102 +1,103 @@
-@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-.latestUploads {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-shrink: inherit; }
+.cardsNews-container {
+  display: flex; }
 
-.snip1529 {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  color: #ffffff;
-  line-height: 1.6em;
-  margin: 10px;
-  max-width: 310px;
-  min-width: 250px;
-  overflow: hidden;
-  position: relative;
-  text-align: left;
-  width: 100%; }
+.cardsNews-container__image {
+  max-width: 30%;
+  border-radius: 50%; }
 
-.snip1529 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease; }
-
-.snip1529 img {
-  max-width: 100%;
-  vertical-align: top;
-  position: relative;
-  opacity: 0.75; }
-
-.snip1529 figcaption {
-  padding: 25px 20px 25px;
-  position: absolute;
-  bottom: 0;
-  z-index: 1; }
-
-.snip1529 .date {
-  background-color: #fff;
-  color: #333;
-  font-size: 18px;
-  font-weight: 800;
-  min-height: 48px;
-  min-width: 48px;
-  padding: 10px 0;
-  position: absolute;
-  right: 15px;
+.cardNews-title {
   text-align: center;
-  text-transform: uppercase;
-  top: 0; }
+  font-size: 40px;
+  border-bottom: 1px solid #FFD000;
+  border-right: 1px solid #FFD000;
+  border-bottom-right-radius: 20px;
+  padding-bottom: 8px;
+  width: 40%;
+  color: white;
+  margin: 200px 0 46px 0; }
 
-.snip1529 .date span {
-  display: block;
-  line-height: 14px; }
-
-.snip1529 .date .month {
-  font-size: 11px; }
-
-.snip1529 h3,
-.snip1529 p {
-  margin: 0;
-  padding: 0; }
-
-.snip1529 h3 {
-  font-weight: 800;
-  letter-spacing: -0.4px; }
-
-.snip1529 .hover {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  align-items: center;
-  background-color: rgba(236, 188, 46, 0.75);
+.cardsNews-container__table {
   display: flex;
-  font-size: 65px;
-  justify-content: center;
-  opacity: 0; }
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 5rem 0rem 0rem 0rem;
+  max-width: 1000px; }
 
-.snip1529 a {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  z-index: 1; }
+.platform-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style-type: none;
+  outline: 1px solid #ddd;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 1px;
+  margin-left: 1px;
+  /*&:first-child {
+    outline: 1px solid #fff;
+    background: transparent;
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+  }*/
+  /*&:nth-child(3) {
+    outline: 1px solid #30305b;
+  }
+  &:nth-child(-n+3) {
+    padding: {
+      top: 40px;
+      bottom: 40px;
+    }
+  }*/ }
+  .platform-cell .platform-title {
+    margin-top: 0;
+    margin-bottom: 3rem; }
+  .platform-cell.cell-feature {
+    text-align: left;
+    font-size: 18px; }
+  .platform-cell.plattform {
+    color: #f4d03f; }
+    .platform-cell.plattform .platform-btn {
+      color: #f4d03f; }
+      .platform-cell.plattform .platform-btn:hover {
+        background-color: #f4d03f;
+        border-color: #f4d03f;
+        color: white; }
+  .platform-cell.enterprise {
+    background-color: #4f3e4a;
+    color: #f4d03f; }
+    .platform-cell.enterprise .platform-btn {
+      color: #f4d03f; }
+      .platform-cell.enterprise .platform-btn:hover {
+        background-color: #4f3e4a;
+        border-color: #4f3e4a;
+        color: #f4d03f; }
 
-.snip1529:hover .hover,
-.snip1529.hover .hover {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-  opacity: 1; }
+/* Table columns
+================================== */
+@media only screen and (max-width: 768px) {
+  .platform-cell.cell-feature {
+    width: 100%;
+    text-align: center; } }
 
-.snip1529:hover figcaption,
-.snip1529.hover figcaption {
-  opacity: 0; }
+.platform-btn {
+  border: 2px solid;
+  padding: .6rem .9rem .6rem .9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  border-radius: 0.3rem; }
 
-.snip1529:hover .date,
-.snip1529.hover .date {
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%); }
+@media (max-width: 580px) {
+  .platform {
+    max-width: 300px; } }

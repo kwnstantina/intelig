@@ -1,30 +1,24 @@
 
 .main {
-  font-family: "Archivo Black", sans-serif;
   background: #f4d03f;
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  height: 70vh;
   justify-content: center;
   align-items: center;
   width:100%;
   box-shadow: rgb(50 50 93 / 1%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
 }
 .words {
-  color: #f4d03f;
-  font-size: 10px;
+  color: #fbe880;
+  font-size: 5rem;
   line-height: 1.5;
 }
 
 .words span {
-  font-size: 5rem;
   display: inline-block;
-  animation: move 4s ease-in-out infinite;
-}
-.buttonStore{
-  margin-right:60%;
-  position:absolute;
-  margin-top: 0 !important;
+  animation: move 10s ease-in-out infinite;
+  padding: 10px;
 }
 
 .main__button{
@@ -66,45 +60,24 @@
     transform: translate(30%, 0);
   }
 }
-
-/*.words span:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-.words span:nth-child(3) {
-  animation-delay: 1s;
-}
-
-.words span:nth-child(4) {
-  animation-delay: 1.5s;
-}
-
-.words span:nth-child(5) {
-  animation-delay: 2s;
-}
-
-.words span:nth-child(6) {
-  animation-delay: 2.5s;
-}
-
-.words span:nth-child(7) {
-  animation-delay: 3s;
-}*/
 @for $item from 1 through 3 {
   .words span:nth-of-type(#{$item}){
-    animation-delay:3s;
+    animation-delay:1s;
+    padding-left: 20px;
   }
 }
 
 @for $item from 3 through 5 {
   .words span:nth-of-type(#{$item}){
     animation-delay:1.5s;
+    padding: 20px;
   }
 }
 
 @for $item from 5 through 7 {
   .words span:nth-of-type(#{$item}){
     animation-delay:0.5s;
+
   }
 }
 
@@ -129,7 +102,7 @@
   .words span {
     font-size: 3rem;
     display: inline-block;
-    animation: move 4s ease-in-out infinite;
+    animation: move 10s ease-in-out infinite;
 
   }
 

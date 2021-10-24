@@ -1,6 +1,7 @@
 const CONSTANTS={};
 
-CONSTANTS.infoOfParaghInTableImage="Functional table.Deep filtering and navigation.";
+CONSTANTS.infoOfParaghInTableImage="Functional table.";
+CONSTANTS.infoOfParaghInTableImageSub="Deep filtering & navigation.";
 
 CONSTANTS.defaultPageSize=[5,10, 20,50];
 

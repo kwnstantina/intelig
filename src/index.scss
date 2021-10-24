@@ -1,14 +1,28 @@
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+
+
+
 *{
   margin: 0;
   padding: 0;
-
+}
+html {
+  @media only screen and (max-width: $bp-largest) {
+    max-width: 100%;
+  }
 }
 
 body {
   min-height: 100vh;
-  background-color:#F9F1F7;
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight: normal;
+  background: linear-gradient(0deg, rgba(85, 121, 130,.8), rgba(85, 121, 130,0) 70.71%),
+  linear-gradient(45deg, rgba(104, 149, 161,.8), rgba(104, 149, 161,0) 70.71%),
+  linear-gradient(127deg, rgba(82, 114, 122,.8), rgba(82, 114, 122,0) 70.71%);
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
   font-size: 20px;
 }
-

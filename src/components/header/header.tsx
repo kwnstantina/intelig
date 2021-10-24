@@ -17,8 +17,7 @@ const Header = () => {
                 <div className="words word-3">
                     {WayArray.map((item, key) => <span key={key}>{item}</span>)}
                 </div>
-                <a href="something" className="main__button">Discover services</a>
-                {/*<button className="buttonStore">Discover services</button>*/}
+                <a href="/services" className="main__button">Discover services</a>
             </div>
 
         </>

@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from "./components/header/header";
-import AddUrlPath from "./components/form/addUrlPath";
+import AddUrlPath from "./components/addUrlPath/addUrlPath";
 import TestimonialsHOC from "./containers/testimonials/testimonialsHOC";
 import SearchComponent from "./components/searchImage/searchComponent"
 import CardNews from "./components/cardNews/cardNews";
 import ScrollProgress from "./general/animations/scrollProgress";
 
-///react hook form
+///react hook addUrlPath
 interface ParentCompProps {
     childComp?: React.ReactNode;
 };

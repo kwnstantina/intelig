@@ -1,57 +1,136 @@
-
-
-.animateSearch{
-  margin-top:5%;
-  box-sizing: border-box;
-  width:100%;
-  padding: 5rem;
-  height:500px;
-  display:flex;
-  flex-direction:row;
-  box-shadow: rgb(50 50 93 / 1%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
-
-}
-.searchTable{
-  width:50%;
-  border-radius: 20px;
-  box-shadow: #5c666b;
-}
-.imageRobot{
-  margin-top: -20px;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  transform:rotate(-5deg);
-}
+@import '../../sassStyles/_mixins.scss';
+@import '../../sassStyles/_animations.scss';
 .title {
-  text-align: center;
-  font-size: 24px;
-  border-bottom: 1px solid #FFD000;
-  border-right: 1px solid #FFD000;
-  border-bottom-right-radius: 20px ;
-  padding-bottom: 8px;
-  width: 40%;
-  margin: 200px 0 0 0;
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 1px solid #FFD000;
+    border-right: 1px solid #FFD000;
+    border-bottom-right-radius: 20px;
+    padding-bottom: 8px;
+    width: 60%;
+    color: white;
+    margin: 200px 0 46px 0;
 }
 
-@media all and (max-width:30em){
-  .animateSearch{
-    display:flex;
-    flex-direction:column;
-    width:auto;
+.animate__search {
+  box-sizing: border-box;
+  padding: 3rem;
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  box-shadow: rgb(50 50 93 / 1%) 0 13px 27px -5px, rgb(0 0 0 / 30%) 0 8px 16px -8px;
+  gap:100px;
+}
 
+
+.animate__imageRobot {
+  @include mobile-only {
+    width:300px;
+    object-fit: scale-down;
   }
-  .imageRobot{
+  @include  desktop-and-up{
+    max-width: 100%;
+    object-fit: cover;
+  }
+  @include desktop-only{
+    max-width: 100%;
+    object-fit: cover;
+  }
+  @include tablet-landscape-only{
+    max-width: 500px;
+    object-fit: cover;
+  }
+  @include mobile-landscape-and-up{
+    max-width: 500px;
+    object-fit: cover;
+}
+
+}
+
+.animate__paragraph {
+  width: 500px;
+  color: white;
+  word-wrap: break-word;
+  font-size: 30px;
+
+}
+
+.animate__bouncy {
+  display: inline-block;
+  padding: 2rem 3rem;
+  border: 0.1em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.2s;
+  animation:  bouchy 5s infinite linear;
+  position: relative;
+
+  &:hover {
+    color: #FFD000;
+    background-color: #FFFFFF;
+  }
+  @include keyframes(bouncy)
+  {
+    0% {
+      top: 0
+    }
+    40% {
+      top: 0
+    }
+    43% {
+      top: -0.9em
+    }
+    46% {
+      top: 0
+    }
+    48% {
+      top: -0.4em
+    }
+    50% {
+      top: 0
+    }
+    100% {
+      top: 0;
+    }
+  }
+  @include animate(bouncy, 5s, linear, infinite);
+
+}
+@media all and (max-width: 700px) {
+  .animate__bouncy {
+    display: block;
     width:200px;
-    heigth:100px;
+    padding: 3px;
   }
-  .animatePrh {
-    transform: translateX(-68px) !important;
+  .animate__search {
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    background-image:url("../../images/star-wars-robot.png");
+    background-size:cover;
+
+
+  }
+  .animate__imageRobot {
+  display:none;
+  }
+  .animate__paragraph {
+    transform: translateX(-50px) !important;
     margin-bottom: 30px;
+    width:200px;
+
   }
 
-  .searchTable{
-    width:100%;
+  .animate__searchTable {
+    width:500px;
+    height: 100px;
+
   }
 }
 

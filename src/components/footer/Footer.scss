@@ -1,14 +1,15 @@
 
 .footer-distributed{
-  background:linear-gradient(-45deg, #4f3e4a, rgba(79, 62, 74, 0.9));
+  //background:linear-gradient(-45deg, #4f3e4a, rgba(79, 62, 74, 0.9));
+  background-color: #273437;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   padding: 50px 60px 40px;
   overflow: hidden;
-  height:700px;
-  margin-top:calc(200px + 100px);
+  height: 700px;
+  margin-top: calc(100vh - 60vh);
 }
 
 .cloud{
@@ -117,7 +118,7 @@
   color: #ffffff;
 }
 
-/* The contact form */
+/* The contact addUrlPath */
 
 .footer-distributed form{
   display: inline-block;
